@@ -1,0 +1,554 @@
+html {
+  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: "Source sans pro";
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* text för nyheter */
+h2 {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3rem;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  letter-spacing: 2%;
+}
+
+/* text för knappar */
+
+h3 {
+  font-family: "Source sans pro";
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  letter-spacing: 1%;
+}
+
+/* menybar */
+
+.nav1 {
+  display: flex;
+  flex: 1;
+  min-width: "100%";
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.nav2 {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.menubutton h3 {
+  transition: 300ms;
+}
+
+.menubutton:hover h3 {
+  color: #6d7265;
+  transform: scale(1.2);
+}
+
+/* pressed menu button */
+
+.menubutton-pressed {
+  background-color: #6d7265;
+  color: #fff;
+}
+
+.menubutton-pressed:hover h3 {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* linje */
+
+hr {
+  height: 0.025rem;
+  background-color: #000;
+  margin: 0;
+}
+
+/* projects */
+
+.flex {
+  display: flex;
+  position: relative;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.flex-container {
+  display: flex;
+  position: relative;
+  border-radius: 2.5%;
+  flex: 1;
+  min-width: 50%;
+  flex-basis: content;
+}
+
+.img {
+  filter: grayscale(0%);
+  transition: 500ms ease;
+  border-radius: 2.5%;
+}
+
+.img:hover {
+  filter: grayscale(100%) blur(2px);
+  opacity: 0.5;
+}
+
+.card:hover {
+  box-shadow: 0.01rem 0.01rem 0.5rem rgb(162, 162, 162);
+  transition: 500ms ease;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flex-container:hover .middle {
+  opacity: 1;
+  transition: 500ms ease;
+}
+
+.text {
+  color: #000;
+  padding: 1rem;
+}
+
+.cardtext h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.cardtext p {
+  margin: 0;
+}
+
+.button {
+  color: #6d7265;
+  background-color: #fff;
+  font-size: 1.5rem;
+  border-radius: 40px;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: #000;
+  transition: 300ms ease;
+  box-shadow: 0.01rem 0.01rem 0.5rem rgb(162, 162, 162);
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  width: 100%;
+  padding-top: 3.5rem;
+  background-color: #f8f9f8;
+  margin-top: 5rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 2.5rem;
+  padding-left: 1rem;
+}
+
+.copyright {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 0.75rem;
+  justify-content: center;
+  text-align: center;
+  color: #6d7265;
+  display: flex;
+  float: center;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #6d7265;
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.socials {
+  width: 36px;
+  height: 36px;
+  list-style: none;
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  margin-top: 0;
+}
+
+.socials li {
+  margin: 0 0.5rem;
+}
+
+.socialsgreen {
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.socialsgreen:hover {
+  opacity: 1;
+}
+
+.footer-signatur {
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.footer-content a {
+  transition: 300ms;
+}
+
+.footer-content a:hover {
+  color: #6d7265;
+  transform: scale(1.075) translateX(1rem);
+}
+
+/* Brytpunkter */
+
+/* Herotext */
+
+@media (max-width: 1080px) {
+  .nav1 h1 {
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 9rem;
+  }
+
+  .nav1 h2 {
+    top: 17.5rem;
+    left: 2rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .nav1 h1 {
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 8rem;
+  }
+
+  .nav1 h2 {
+    top: 15.5rem;
+    left: 2rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav1 h1 {
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 7rem;
+  }
+
+  .nav1 h2 {
+    top: 14rem;
+    left: 2rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav1 h1 {
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 6rem;
+  }
+
+  .nav1 h2 {
+    top: 12.5rem;
+    left: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav1 h1 {
+    top: 1rem;
+    left: 1rem;
+    font-size: 5rem;
+    letter-spacing: -1px;
+  }
+
+  .nav1 h2 {
+    top: 10rem;
+    left: 1rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav1 h1 {
+    top: 0.5 rem;
+    left: 1rem;
+    font-size: 4rem;
+    letter-spacing: -1px;
+  }
+
+  .nav1 h2 {
+    top: 8rem;
+    left: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav1 h1 {
+    /* top: 0 rem; */
+    left: 1rem;
+    font-size: 3rem;
+    letter-spacing: 0px;
+  }
+
+  .nav1 h2 {
+    top: 6.25rem;
+    left: 1rem;
+    font-size: 1 rem;
+  }
+}
+
+/* Footer */
+
+@media (max-width: 770px) {
+  .footer-content a {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .footer-signatur {
+    right: 0rem;
+    bottom: 1.75rem;
+    transform: scale(0.8);
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .footer-content a {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-content h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  .footer-signatur {
+    bottom: 1.5rem;
+    transform: scale(0.7);
+  }
+
+  .socials {
+    right: 1rem;
+    top: 1.5rem;
+    transform: scale(0.8);
+  }
+
+  footer {
+    margin-top: 3.5rem;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-content a {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 0;
+  }
+
+  .footer-signatur {
+    bottom: 1.25rem;
+    transform: scale(0.6);
+  }
+
+  .socials {
+    transform: scale(0.75);
+    left: 1.5rem;
+    top: 1rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.25rem;
+  }
+}
+
+/* Menybar */
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: 1.25rem;
+    margin: 0.75rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  h3 {
+    font-size: 0.75rem;
+    margin: 0.25rem 0;
+  }
+}
+
+/* Body - Projektsida */
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .cardtext h1 {
+    font-size: 2.25rem;
+  }
+
+  .text {
+    padding: 0.75rem;
+  }
+
+  .button {
+    font-size: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .cardtext h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .cardtext p {
+    line-height: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .cardtext h1 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .cardtext p {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+  }
+
+  .text {
+    padding: 0.5rem;
+  }
+
+  .button {
+    font-size: 0.75rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.25rem 1.5rem;
+  }
+}

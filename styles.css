@@ -1,0 +1,1196 @@
+html {
+  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: "Source sans pro";
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1%;
+}
+
+/* Text i hero - startsida */
+
+.nav1 h1 {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-family: "Source sans pro";
+  font-size: 10rem;
+  font-weight: 700;
+  color: transparent;
+  line-height: 85%;
+  letter-spacing: -2px;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 6.5px 6.5px 0 #e2e7d9;
+}
+
+.nav1 h2 {
+  position: absolute;
+  top: 19rem;
+  left: 2rem;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+/* text för nyheter */
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3rem;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  letter-spacing: 2%;
+}
+
+/* text för knappar */
+
+h3 {
+  font-family: "Source sans pro";
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  letter-spacing: 1%;
+}
+
+/* menybar */
+
+.nav1 {
+  display: flex;
+  flex: 1;
+  min-width: "100%";
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  position: relative;
+}
+
+.nav2 {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.menubutton h3 {
+  transition: 300ms;
+}
+
+.menubutton:hover h3 {
+  color: #6d7265;
+  transform: scale(1.2);
+}
+
+/* pressed menu button */
+
+.menubutton-pressed {
+  background-color: #6d7265;
+  color: #fff;
+}
+
+.menubutton-pressed:hover h3 {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* linje */
+
+hr {
+  height: 0.025rem;
+  background-color: #000;
+  margin: 0;
+}
+
+/* recent projects */
+
+.flex-container {
+  display: flex;
+  position: relative;
+  border-radius: 2.5%;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.img {
+  filter: grayscale(0%);
+  transition: 500ms ease;
+  border-radius: 2.5%;
+}
+
+.img:hover {
+  filter: grayscale(100%) blur(2px);
+  opacity: 0.5;
+}
+
+.card:hover {
+  box-shadow: 0.01rem 0.01rem 0.5rem rgb(162, 162, 162);
+  transition: 500ms ease;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.flex-container:hover .middle {
+  opacity: 1;
+  transition: 500ms ease;
+}
+
+.text {
+  color: #000;
+  padding: 1rem;
+}
+
+.cardtext h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.cardtext p {
+  margin: 0;
+}
+
+.button {
+  color: #6d7265;
+  background-color: #fff;
+  font-size: 1.75rem;
+  border-radius: 40px;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  justify-content: flex-end;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: #000;
+  transition: 300ms ease;
+  box-shadow: 0.01rem 0.01rem 0.5rem rgb(162, 162, 162);
+}
+
+/* connect */
+
+.connect-containter {
+  display: flex;
+  position: relative;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin: 3rem 1rem 1rem 1rem;
+}
+
+.connect-box1 {
+  display: flex;
+  position: relative;
+  flex: 1;
+  max-width: 40%;
+  flex-basis: content;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.connect-box2 {
+  display: flex;
+  position: relative;
+  flex: 1;
+  min-width: 50%;
+  flex-basis: content;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+
+.connect-containter h1 {
+  font-family: "Source sans pro";
+  font-size: 6rem;
+  font-weight: 700;
+  color: transparent;
+  line-height: 85%;
+  letter-spacing: -2px;
+  -webkit-text-stroke: 2px black;
+  margin: 0;
+  margin-top: 0.5rem;
+  text-shadow: 5px 5px 0 #e2e7d9;
+}
+
+.connect-containter h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3rem;
+  margin: 2.5rem 0rem 1rem 0rem;
+  letter-spacing: 2%;
+}
+
+.connect-containter h3 {
+  font-family: "Source sans pro";
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 2rem 0 0 0;
+  letter-spacing: 1%;
+}
+
+.connect-containter h4 {
+  font-family: "Source sans pro";
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.connect-containter p {
+  font-family: "Source sans pro";
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1%;
+}
+
+.connect-box2 ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.connect-box2 a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: #6d7265;
+}
+
+.connect-box2 li {
+  transition: 300ms;
+  padding-bottom: 0.5rem;
+}
+
+.connect-box2 li:hover {
+  transform: scaleX(1.1) translateX(4rem);
+}
+/* Download button */
+
+.btndownload {
+  background-color: #6d7265;
+  border: none;
+  color: white;
+  max-width: 60%;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  border-radius: 40px;
+  margin-top: 3rem;
+}
+
+.btndownload:hover {
+  transition: 300ms ease;
+  box-shadow: 0.01rem 0.01rem 0.5rem rgb(162, 162, 162);
+  opacity: 70%;
+}
+
+/* Casesidor */
+
+.case-containter {
+  display: flex;
+  position: relative;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin: 3rem 1rem 1rem 1rem;
+}
+
+.case-box1 {
+  display: flex;
+  position: relative;
+  flex: 1;
+  max-width: 40%;
+  flex-basis: content;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.connect-textbox {
+  display: flex;
+  position: relative;
+  flex: 1;
+  min-width: 50%;
+  max-width: 60%;
+  flex-basis: content;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 3rem;
+}
+
+.connect-textbox h3 {
+  font-family: "Source sans pro";
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 1rem 0 0 0;
+  letter-spacing: 1%;
+  color: #6d7265;
+}
+
+.connect-textbox p {
+  font-family: "Source sans pro";
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 1%;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.video {
+  max-width: 85%;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+
+.video-Nox {
+  max-width: 95%;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+
+.video-Shuu {
+  max-width: 98%;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+
+.project {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.by {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.by h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  color: #6d7265;
+  margin: 0;
+}
+
+.projectprocess {
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project h1 {
+  font-size: 4rem;
+  margin: 0;
+  margin-top: 3rem;
+}
+
+.project h2 {
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  width: 100%;
+  padding-top: 3.5rem;
+  background-color: #f8f9f8;
+  margin-top: 5rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 2.5rem;
+  padding-left: 1rem;
+}
+
+.copyright {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  justify-content: center;
+  text-align: center;
+  color: #6d7265;
+  display: flex;
+  float: center;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #6d7265;
+  font-family: "Lato";
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.socials {
+  width: 36px;
+  height: 36px;
+  list-style: none;
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  margin-top: 0;
+}
+
+.socials li {
+  margin: 0 0.5rem;
+}
+
+.socialsgreen {
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.socialsgreen:hover {
+  opacity: 1;
+}
+
+.footer-signatur {
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.footer-content a {
+  transition: 300ms;
+}
+
+.footer-content a:hover {
+  color: #6d7265;
+  transform: scale(1.075) translateX(1rem);
+}
+
+/* Brytpunkter */
+
+/* Herotext */
+
+@media (max-width: 1080px) {
+  .nav1 h1 {
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 9rem;
+    text-shadow: 6px 6px 0 #e2e7d9;
+  }
+
+  .nav1 h2 {
+    top: 17.5rem;
+    left: 2rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .nav1 h1 {
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 8rem;
+    text-shadow: 5.5px 5.5px 0 #e2e7d9;
+  }
+
+  .nav1 h2 {
+    top: 15.5rem;
+    left: 2rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav1 h1 {
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 7rem;
+    text-shadow: 5px 5px 0 #e2e7d9;
+  }
+
+  .nav1 h2 {
+    top: 14rem;
+    left: 2rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav1 h1 {
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 6rem;
+    text-shadow: 4.5px 4.5px 0 #e2e7d9;
+  }
+
+  .nav1 h2 {
+    top: 12.5rem;
+    left: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav1 h1 {
+    top: 1rem;
+    left: 1rem;
+    font-size: 5rem;
+    letter-spacing: -1px;
+    text-shadow: 4px 4px 0 #e2e7d9;
+  }
+
+  .nav1 h2 {
+    top: 10rem;
+    left: 1rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav1 h1 {
+    top: 0.5 rem;
+    left: 1rem;
+    font-size: 4rem;
+    letter-spacing: -1px;
+    text-shadow: 3.5px 3.5px 0 #e2e7d9;
+  }
+
+  .nav1 h2 {
+    top: 8rem;
+    left: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav1 h1 {
+    left: 1rem;
+    font-size: 3rem;
+    letter-spacing: 0px;
+    text-shadow: 3px 3px 0 #e2e7d9;
+  }
+
+  .nav1 h2 {
+    top: 6.25rem;
+    left: 1rem;
+    font-size: 1 rem;
+  }
+}
+
+/* Footer */
+
+@media (max-width: 770px) {
+  .footer-content a {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .footer-signatur {
+    right: 0rem;
+    bottom: 1.75rem;
+    transform: scale(0.8);
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .footer-content a {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-content h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  .footer-signatur {
+    bottom: 1.5rem;
+    transform: scale(0.7);
+  }
+
+  .socials {
+    right: 1rem;
+    top: 1.5rem;
+    transform: scale(0.8);
+  }
+
+  footer {
+    margin-top: 3.5rem;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-content a {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 0;
+  }
+
+  .footer-signatur {
+    bottom: 1.25rem;
+    transform: scale(0.6);
+  }
+
+  .socials {
+    transform: scale(0.75);
+    left: 1.5rem;
+    top: 1rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+
+  .copyright {
+    font-size: 0.25rem;
+  }
+}
+
+/* Menybar */
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: 1.25rem;
+    margin: 0.75rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  h3 {
+    font-size: 0.75rem;
+    margin: 0.25rem 0;
+  }
+}
+
+/* Body - Startsida */
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .cardtext h1 {
+    font-size: 2.5rem;
+  }
+
+  .text {
+    padding: 0.75rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  .cardtext h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    font-size: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .cardtext h1 {
+    font-size: 2rem;
+  }
+
+  .text {
+    padding: 0.5rem;
+  }
+
+  .cardtext p {
+    font-size: 0.75rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    right: 0.75rem;
+    bottom: 1rem;
+  }
+}
+
+/* Connect + About */
+
+@media (max-width: 955px) {
+  .connect-containter h1 {
+    font-size: 5rem;
+    text-shadow: 4.5px 4.5px 0 #e2e7d9;
+  }
+
+  .connect-containter h2 {
+    font-size: 2.5rem;
+  }
+
+  .connect-box2 ul {
+    padding-top: 1.5rem;
+  }
+
+  .connect-box2 a {
+    font-size: 1.75rem;
+  }
+
+  .connect-containter h3 {
+    font-size: 2.5rem;
+  }
+
+  .connect-containter h4 {
+    font-size: 1.25rem;
+  }
+
+  .btndownload {
+    font-size: 1rem;
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 810px) {
+  .connect-containter {
+    gap: 1rem;
+    margin: 2rem 1rem 1rem 1rem;
+  }
+
+  .connect-containter h1 {
+    font-size: 4.25rem;
+    text-shadow: 4px 4px 0 #e2e7d9;
+    margin-top: 0rem;
+  }
+
+  .connect-containter h2 {
+    font-size: 2rem;
+    margin: 2.5rem 0rem 0.75rem 0rem;
+  }
+
+  .connect-box2 ul {
+    padding-top: 1rem;
+  }
+
+  .connect-box2 a {
+    font-size: 1.5rem;
+  }
+
+  .connect-box2 li {
+    padding-bottom: 0.25rem;
+  }
+
+  .connect-box2 {
+    margin-left: 1rem;
+  }
+
+  .connect-containter h3 {
+    font-size: 2rem;
+    margin: 1.5rem 0 0 0;
+  }
+
+  .connect-containter h4 {
+    font-size: 1rem;
+  }
+
+  .btndownload {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin-top: 2rem;
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 680px) {
+  .connect-containter {
+    margin: 1.5rem 1rem 1rem 1rem;
+  }
+
+  .connect-containter h1 {
+    font-size: 3.25rem;
+    text-shadow: 3.25px 3.25px 0 #e2e7d9;
+    -webkit-text-stroke: 1.75px black;
+  }
+
+  .connect-containter h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0rem 0.5rem 0rem;
+  }
+
+  .connect-box2 ul {
+    padding-top: 0.5rem;
+  }
+
+  .connect-box2 a {
+    font-size: 1rem;
+  }
+
+  .connect-box2 li {
+    padding-bottom: 0.25rem;
+  }
+
+  .connect-box2 {
+    margin-left: 0.5rem;
+  }
+
+  .connect-containter h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .connect-containter h4 {
+    font-size: 1rem;
+  }
+
+  .btndownload {
+    font-size: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 525px) {
+  .connect-containter {
+    margin: 1rem;
+  }
+
+  .connect-containter h1 {
+    gap: 0.5rem;
+    font-size: 2.75rem;
+    text-shadow: 2.5px 2.5px 0 #e2e7d9;
+  }
+
+  .connect-containter h2 {
+    font-size: 1rem;
+    margin: 1.5rem 0rem 0.25rem 0rem;
+  }
+
+  .connect-box2 ul {
+    padding-top: 0.25rem;
+  }
+
+  .connect-box2 a {
+    font-size: 0.75rem;
+  }
+
+  .connect-box2 li {
+    padding-bottom: 0rem;
+  }
+
+  .connect-box2 {
+    margin-left: 0.25rem;
+  }
+
+  .connect-containter h3 {
+    font-size: 1rem;
+    margin: 0.75rem 0 0 0;
+  }
+
+  .connect-containter h4 {
+    font-size: 0.75rem;
+  }
+
+  .btndownload {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: 1rem;
+    max-width: 80%;
+  }
+
+  .connect-containter p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .connect-containter h1 {
+    font-size: 2.25rem;
+    gap: 0rem;
+    text-shadow: 1.75px 1.75px 0 #e2e7d9;
+    -webkit-text-stroke: 1.5px black;
+  }
+
+  .connect-containter h2 {
+    font-size: 1rem;
+    margin: 1.5rem 0rem 0.25rem 0rem;
+  }
+
+  .connect-box2 ul {
+    padding-top: 0rem;
+  }
+
+  .connect-box2 {
+    margin-left: 0rem;
+  }
+
+  .connect-box1 {
+    max-width: 50%;
+  }
+
+  .btndownload {
+    max-width: 90%;
+  }
+}
+
+/* case */
+
+@media (max-width: 1000px) {
+  .case-containter {
+    gap: 1rem;
+  }
+
+  .connect-textbox {
+    min-width: 45%;
+    max-width: 55%;
+  }
+
+  .case-box1 {
+    max-width: 45%;
+  }
+
+  .video {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .case-containter {
+    gap: 0.5rem;
+  }
+
+  .connect-textbox {
+    min-width: 30%;
+    max-width: 40%;
+    margin-right: 1.5rem;
+  }
+
+  .case-box1 {
+    max-width: 50%;
+  }
+
+  .connect-textbox h3 {
+    font-size: 2.5rem;
+  }
+
+  .connect-textbox p {
+    font-size: 1.2rem;
+  }
+
+  .project h1 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+
+  .project h3 {
+    font-size: 1.25rem;
+  }
+
+  .video {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 780px) {
+  .connect-textbox {
+    margin-right: 0.75rem;
+  }
+
+  .connect-textbox h3 {
+    font-size: 2rem;
+  }
+
+  .connect-textbox p {
+    font-size: 1rem;
+  }
+
+  .project h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .by {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .connect-textbox {
+    min-width: 35%;
+    max-width: 45%;
+    margin-right: 0rem;
+  }
+
+  .case-box1 {
+    max-width: 55%;
+  }
+
+  .connect-textbox h3 {
+    font-size: 1.75rem;
+  }
+
+  .project h1 {
+    font-size: 2.5rem;
+    margin-top: 1.75rem;
+  }
+
+  .project h3 {
+    font-size: 1rem;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
+  .by h3 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .connect-textbox h3 {
+    font-size: 1.5rem;
+  }
+
+  .connect-textbox p {
+    font-size: 0.75rem;
+  }
+
+  .project h1 {
+    font-size: 2.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .by {
+    margin-bottom: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-containter {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .connect-textbox {
+    margin: auto;
+    min-width: 100%;
+  }
+
+  .case-box1 {
+    max-width: 100%;
+  }
+
+  .video-Nox {
+    max-width: 100%;
+  }
+
+  .by {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .project h1 {
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .project h3 {
+    font-size: 0.75rem;
+  }
+}
